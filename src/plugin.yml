@@ -1,0 +1,36 @@
+name: GetDiscord
+version: 1.0
+author: Joffrey4 aka NycoDiValones
+website: https://jbvn.me/getdisc/
+description: Get the discord link of your server by typing /discord !
+
+main: io.github.joffrey4.getdiscord.Main
+database: false
+
+commands:
+  discord:
+    aliases: disc
+    description: Get the discord link of this server.
+    usage: /discord
+    permission: getdiscord.discord
+    permission-message: You don't have the permission to execute this command
+
+  setdiscord:
+    aliases: setdisc
+    description: Set the discord link, comment or color for the command /discord
+    usage: /setdiscord <parameter> <value>
+    permission: getdiscord.setdiscord
+    permission-message: You don't have the permission to execute this command
+
+permissions:
+  getdiscord.*:
+    description: Gives access to all GetDiscord commands.
+    children:
+      getdiscord.discord: true
+      getdiscord.setdiscord: true
+  getdiscord.discord:
+    description: Allow you to get the Discord link with /discord
+    default: true
+  getdiscord.setdiscord:
+    description: Allow you to edit the plugins configuration with /setdiscord
+    default: op

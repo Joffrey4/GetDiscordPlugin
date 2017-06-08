@@ -1,0 +1,22 @@
+# ======================================================
+# <                Get Discord Plugin:                 >
+# <                 Configuration File                 >
+# <       https://github.com/Joffrey4/GetDiscord       >
+# ======================================================
+
+# This configuration file was generated in v1.0.
+# Please respect the indentation (TAB).
+
+# If any change are made in a future version, you will need to
+# add the missing parameters on your own, or to generate a new
+# configuration file by deleting this one.
+
+
+# link: The invitation link of your Discord
+# comment: A message send to the player with the link. Leave blank to send nothing
+# color: The color of the plugin's texts ("Discord:" & ">>")
+
+Discord:
+  link: 'https://discord.gg/your_link'
+  comment: '&3>>&6 Click the link and join the fun !'
+  color: '&3'
